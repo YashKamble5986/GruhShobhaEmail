@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="./Asset/Home.css">
+  <link rel="stylesheet" href="./Asset/Other.css">
+
+  <title>GruhShobha</title>
+</head>
+
+<body>
+  <header class="sticky-top">
+    <div class="header-section">
+      <div class="container">
+        <div class="menu" id="headDiv1">
+          <div class="mainlogo">
+            <a href="./index.html">
+              <img src="././Asset/Images/Logo-Gruhashobha-SVG 1.png" alt="">
+            </a>
+          </div>
+          <div class="menu-list">
+            <ul class="drop-menu">
+              <li>
+                <div class="dropdown nav-dropdown">
+                  <div class="drop1">
+                    <a href="./index.html"> Home</a>
+                  </div>
+
+                </div>
+              </li>
+              <li>
+                <div class="dropdown  nav-dropdown">
+                  <div class="drop1">
+                    <a href="./About.html"> About Us</a>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="dropdown  nav-dropdown">
+                  <div class="drop1">
+                    Our Services
+                  </div>
+                  <ul class="dropdown-menu">
+
+                    <li><a href="./Commercial.html">Commercial</a></li>
+                    <li><a href="./Residential.html">Residential</a> </li>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown  nav-dropdown">
+                  <div class="drop1">
+                    <a href="./Projectgrid.html"> Projects</a>
+                  </div>
+                  <!--<ul class="dropdown-menu">-->
+
+                  <!--  <li><a href="./Projectgrid.html">Project Grid</a></li>-->
+                  <!--  <li><a href="./Projectsignal.html">Project Signal</a> </li>-->
+                  <!--  </ul>-->
+                </div>
+
+
+              </li>
+              <li>
+                <div class="dropdown  nav-dropdown">
+                  <div class="drop1">
+                    <a href="./Gallery.html">Gallery</a>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="dropdown  nav-dropdown">
+                  <div class="drop1">
+                    <a href="./Contact.php">Contact Us</a>
+                  </div>
+
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="MobileNewMenuList">
+            <div class="brand-logo">
+              <img src="./Asset/Images/Logo-Gruhashobha-SVG 1.png" alt="">
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item acord-item1">
+                <h2 class="accordion-header">
+                  <button class="acord-btn">
+                    <a href="./index.html">Home</a>
+                  </button>
+                </h2>
+
+              </div>
+              <div class="accordion-item acord-item1">
+                <h2 class="accordion-header">
+                  <button class="acord-btn">
+                    <a href="./About.html"> About Us</a>
+                  </button>
+                </h2>
+
+              </div>
+              <div class="accordion-item acord-item1">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed acord-btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Our Services
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="mobile-view-menu">
+                      <ul class="Show-list">
+                        <li><a href="./Commercial.html">Commercial</a></li>
+                        <li><a href="./Residential.html">Residential</a></li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item acord-item1">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed acord-btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                    <a href="./Projectgrid.html"> Projects</a>
+                  </button>
+                </h2>
+                <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <!--<div class="accordion-body">-->
+                  <!--    <div class="mobile-view-menu">-->
+                  <!--        <ul class="Show-list">-->
+                  <!--            <li><a href="./Projectgrid.html">Project Grid</a></li>-->
+                  <!--            <li><a href="./Projectsignal.html">Project Signal</a></li>-->
+
+                  <!--        </ul>-->
+                  <!--    </div>-->
+                  <!--</div>-->
+                </div>
+              </div>
+              <div class="accordion-item acord-item1">
+                <h2 class="accordion-header">
+                  <button class="acord-btn">
+                    <a href="./Gallery.html"> Gallery</a>
+                  </button>
+                </h2>
+
+              </div>
+
+              <div class="accordion-item acord-item1">
+                <h2 class="accordion-header">
+                  <button class="acord-btn">
+                    <a href="./Contact.html"> Contact Us</a>
+                  </button>
+                </h2>
+
+              </div>
+            </div>
+            <div class="MobileMenuBar1 new-menubar">
+              <span class="material-symbols-outlined cross removeToggler">
+                <i class="fa-solid fa-xmark"></i>
+              </span>
+            </div>
+          </div>
+          <div class="MobileMenuBar  addToggler">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="section-2">
+    <div class="owl-carousel owl-theme sec1-owl-carsoul">
+      <div class="item">
+        <div class="banner-img">
+          <img class="w-100 banner-img" src="./Asset/Images/Banner-1.webp" alt="">
+          <div class="overlay">
+
+          </div>
+          <div class="banner-header">
+            <h2 class="banner-heading" data-aos-duration="1000" data-aos="fade-right">Elevate Your Space with Tailored
+              Interior Excellence from Gruhashobha Interiors
+            </h2>
+            <button class="banner-btn">View More</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="banner-img">
+          <img class="w-100" src="./Asset/Images/Banner-2.webp" alt="">
+          <div class="overlay">
+
+          </div>
+          <div class="banner-header">
+            <h2 class="banner-heading" data-aos-duration="1000" data-aos="fade-right">Crafting Dreams into Reality:
+              Experience Bespoke Interior Solutions Now!
+            </h2>
+            <button class="banner-btn">View More</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="banner-img">
+          <img class="w-100" src="./Asset/Images/Banner-3.webp" alt="">
+          <div class="overlay">
+
+          </div>
+          <div class="banner-header">
+            <h2 class="banner-heading" data-aos-duration="1000" data-aos="fade-right">Transforming Spaces, Creating
+              Lasting Memories: Your Vision, Our Expertise
+            </h2>
+            <button class="banner-btn">View More</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="banner-img">
+          <img class="w-100" src="./Asset/Images/Banner-4.webp" alt="">
+          <div class="overlay">
+
+          </div>
+          <div class="banner-header">
+            <h2 class="banner-heading" data-aos-duration="1000" data-aos="fade-right">Where Innovation Meets
+              Craftsmanship: Unleash Your Space's Potential
+            </h2>
+            <button class="banner-btn">View More</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section-3">
+    <div class="container working-padding">
+      <div class="gintol-content-inner">
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="left-sec">
+              <div class="main-img">
+                <img src="./Asset/Images/25-years.png" alt="">
+              </div>
+              <div class="sub-title">
+                WORKING SINCE 1998
+              </div>
+              <div class="SecTwrapper mr-bottom">
+                <div class="Secctitle">Elevate Your Space with Gruhashobha Interiors</div>
+                <span class="title-separator separator-border theme-color-bg"></span>
+              </div>
+              <!--<div class="25-years-title Secctitle ">-->
+              <!--  We are right place to build your dream house.-->
+              <!--</div>-->
+              <div class="section-description">
+                At Gruhashobha Interiors, we take pride in our ability to design, plan, and execute projects with
+                meticulous attention to detail, ensuring the highest standards of quality and client satisfaction. Our
+                journey is defined by a commitment to excellence, innovation, and personalized service, making us the
+                trusted choice for discerning clients nationwide.<br />Step into a world where every space tells a
+                story, and let Gruhashobha Interiors transform your vision into reality. Welcome to a new dimension of
+                interior excellence.
+              </div>
+              <button class="discription-btn">
+                Learn More
+              </button>
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="right-sec" data-aos="fade-left" data-aos-duration="1000">
+              <img class="w-100" src="./Asset/Images/right-sec-img.webp" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="section-4">
+    <div class="container left-right-padding">
+
+      <div class="SecTwrapper text-center our-service-sec">
+        <div class="Secctitle  sectitl2">Our Services
+        </div>
+        <span class="title-separator separator-border theme-color-bg "></span>
+      </div>
+      <div class="row gy-4 align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1200">
+        <div class="col-md-5 col-sm-6">
+          <div class="first-box secong-img">
+            <div class="img-sec">
+              <img class="interior-child-img" src="./Asset/Images/about-icons/CommercialInteriorIcon.webp" alt="">
+              <h3 class="content-title">
+                <a href="./Commercial.html">Commercial Design</a>
+              </h3>
+              <div class="content-para">Creating spaces that inspire productivity, foster creativity, and leave a
+                lasting impression is essential.</div>
+              <button class="read-morebtn"><a href="./Commercial.html">Read More</a><i
+                  class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6">
+          <div class="first-box">
+            <div class="img-sec">
+              <img class="interior-child-img" src="./Asset/Images/about-icons/HomeInteriorIcon.webp" alt="">
+              <h3 class="content-title">
+                <a href="./Residential.html">Residential Design</a>
+              </h3>
+              <div class="content-para">Your home is more than just a place; it's a reflection of your style,
+                personality, and aspirations.</div>
+              <button class="read-morebtn">
+                <a href="./Residential.html">Read More</a><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="whychoose">
+      <div class="container left-right-padding ">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="left">
+              <img class="img-fluid" src="./Asset/Images/Why Choose Us.webp" alt="img">
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="right">
+              <div class="SecTwrapper">
+                <div class="Secctitle">Why Choose Us</div>
+                <span class="title-separator separator-border theme-color-bg"></span>
+              </div>
+
+              <div class="row gy-5">
+                <div class="col-sm-6">
+                  <div class="imgText d-flex">
+                    <div class="pic ">
+                      <!-- <i class="fa-solid fa-unlock-keyhole"></i> -->
+                      <img src="./Asset/Images/GS-Home-Icons/DiverseSector.svg" alt="img">
+                    </div>
+
+                    <div class="detail ps-4">
+                      <div class="head">
+                        Expertise in Diverse Sectors
+                      </div>
+                      <div class="desc">
+                        From residential to commercial, including hospitality and office interiors, our versatile
+                        experience ensures tailored solutions for every project.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="imgText d-flex">
+                    <div class="pic ">
+                      <!-- <i class="fa-solid fa-location-arrow fa-rotate-270"></i> -->
+                      <img src="./Asset/Images/GS-Home-Icons/AttentiotoDetail.svg" alt="img">
+                    </div>
+
+                    <div class="detail ps-4">
+                      <div class="head">
+                        Attention to Detail
+                      </div>
+                      <div class="desc">
+                        Meticulous craftsmanship and a keen eye for detail guarantee flawless execution, ensuring every
+                        aspect of your space reflects perfection.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="imgText d-flex">
+                    <div class="pic ">
+                      <!-- <i class="fa-solid fa-wallet"></i> -->
+                      <img src="./Asset/Images/GS-Home-Icons/ClientCentricApproach.svg" alt="img">
+                    </div>
+
+                    <div class="detail ps-4">
+                      <div class="head">
+                        Client-Centric Approach
+                      </div>
+                      <div class="desc">
+                        Our collaborative process puts your needs first, ensuring that your vision is at the forefront
+                        of every design decision.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="imgText d-flex">
+                    <div class="pic ">
+                      <!-- <i class="fa-solid fa-print"></i> -->
+                      <img src="./Asset/Images/GS-Home-Icons/BespokeSolution.svg" alt="img">
+                    </div>
+
+                    <div class="detail ps-4">
+                      <div class="head">
+                        Bespoke Solutions
+                      </div>
+                      <div class="desc">
+                        Whether it's custom furniture or tailored interior designs, our bespoke services ensure that
+                        every element is uniquely crafted to suit your preferences.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="imgText d-flex">
+                    <div class="pic ">
+                      <!-- <i class="fa-solid fa-gear"></i> -->
+                      <img src="./Asset/Images/GS-Home-Icons/QualityAssurance.svg" alt="img">
+                    </div>
+
+                    <div class="detail ps-4">
+                      <div class="head">
+                        Quality Assurance
+                      </div>
+                      <div class="desc">
+                        With a commitment to excellence, we guarantee best-in-class quality in materials, construction,
+                        and finishing, delivering enduring results that surpass expectations.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="imgText d-flex">
+                    <div class="pic ">
+                      <!-- <i class="fa-solid fa-scissors fa-rotate-270"></i> -->
+                      <img src="./Asset/Images/GS-Home-Icons/TrackRecord.svg" alt="img">
+                    </div>
+
+                    <div class="detail ps-4">
+                      <div class="head">
+                        Proven Track Record
+                      </div>
+                      <div class="desc">
+                        Trusted by leading names in the industry, our portfolio of successful projects speaks volumes
+                        about our reliability, professionalism, and dedication to client satisfaction.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="testimoniall">
+      <div class="container left-right-padding">
+        <div class="SecTwrapper text-center">
+          <div class="Secctitle  sectitl2">Testimonials</div>
+          <span class="title-separator separator-border theme-color-bg"></span>
+        </div>
+        <div class="sliderParent">
+          <div class="owl-carousel owl-theme testimSlider">
+            <div class="item">
+
+              <div class="mainCard text-center">
+                <div class="content">
+                  Gruhashobha interior did a great job for design execution of office space. Being a German company our
+                  focus is on quality and they meet our expectation in quality material, timeslines for completing
+                  project and prompt service. Also I have done interior work of my residence which is the best one so
+                  far. Thanks to whole Gruhashobha team for your efforts.
+                </div>
+                <div class="testmName">
+                  Aparna Mohod
+                </div>
+                <div class="testimDesignation">Managing Director,</div>
+                <div class="position">Hein+Fricke technology India Pvt Ltd, Pune</div>
+                <div class="testimpic">
+                  <img src="./Asset/Images/Aparna Mohod.webp" alt="img" class="img-fluid borRad">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+
+              <div class="mainCard text-center">
+                <div class="content">
+                  We used Gruhshobha for the interior of our apartment in Balewadi. Mr Atul had amazing ideas and always
+                  put the best foot forward for bringing the best out of the rooms in our apartment. Services are very
+                  good. I strongly recommend Gruhshobha interiors. Thanks.
+                </div>
+                <div class="testmName">
+                  Kush Kawale
+                </div>
+                <!-- <div class="testimDesignation">CEO</div> -->
+                <div class="testimpic">
+                  <img src="./Asset/Images/Client-Placeholder-img.png " alt="img" class="img-fluid borRad">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+
+              <div class="mainCard text-center">
+                <div class="content">
+                  Gruhashobha proves his name itself. They offer best service and solutions on interiors with Effective
+                  costing. Team is polite and professional. For interior in any segment, one can surly go with
+                  Gruhashobha interiors.
+                </div>
+                <div class="testmName">
+                  Amit Khandetod
+                </div>
+                <!-- <div class="testimDesignation">Analytics</div> -->
+                <div class="testimpic">
+                  <img src="./Asset/Images/Client-Placeholder-img.png" alt="img" class="img-fluid borRad">
+                </div>
+              </div>
+            </div>
+            <!-- <div class="item">
+
+              <div class="mainCard text-center">
+                <div class="content">
+                  Mauris id enim id purus ornare tincidunt. Aenean vel consequat risus. Proin viverra nisi at nisl
+                  imperdiet auctor. Donec ornare, est sed tincidunt placerat, sem
+                </div>
+                <div class="testmName">
+                  Johnny
+                </div>
+                <div class="testimDesignation">Manager</div>
+                <div class="testimpic">
+                  <img src="./Asset/Images/test-4-80x80.webp" alt="img" class="img-fluid borRad">
+                </div>
+              </div>
+            </div> -->
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="interiorDesign text-center">
+      <div class="Secctitle text-center sectitl2 intDes">Crafting Excellence, Redefining Spaces</div>
+      <div class="desc">
+        At Gruhashobha Interiors, we take pride in our ability to design, plan, and execute projects with meticulous
+        attention to detail, ensuring the highest standards of quality and client satisfaction.
+      </div>
+
+      <div class="cnt-btn">
+        <button class="btn">
+          <a href="./Contact.html">Contact Us</a>
+        </button>
+      </div>
+      <div class="clip">
+
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="Lprojects">
+      <div class="SecTwrapper text-center">
+        <div class="Secctitle  sectitl2">Latest Projects</div>
+        <span class="title-separator separator-border theme-color-bg"></span>
+      </div>
+      <div class="projectWrapper">
+        <div class="owl-carousel owl-theme projectCarousel">
+          <div class="item">
+            <div class="projCard">
+              <img class="img1 img-fluid" src=" ./Asset/Images/IRA-Nashik/1 Main-Image.webp" alt="img"
+                class="img-fluid br-6">
+            
+            <a href="./IRANashik.html" class="overlay d-flex">
+              <div class="parentO">
+                <div href="#" class="proTitle">
+                  IRA Nashik</div>
+                <div class="category">
+                  Hotel and Restaurant</div>
+              </div>
+            </a>
+          </div>
+</div>
+          <div class="item">
+            <div class="projCard">
+              <img class="img1 img-fluid" src="./Asset/Images/Cherry Blossom, Orchid/1 Main Image.webp" alt="img"
+                class="img-fluid br-6">
+
+
+              <a href="./OrchidHotel.html" class="overlay d-flex">
+                <div class="parentO">
+                  <div class="proTitle">The Orchid Hotel, Balewadi, Pune</div>
+                  <div class="category">Restaurant</div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+          <div class="item">
+            <div class="projCard">
+              <img class="img1 img-fluid" src="./Asset/Images/Main-Image.webp" alt="img" class="img-fluid br-6">
+
+
+              <a href="./IRASambhajinagar.html" class="overlay d-flex">
+                <div class="parentO">
+                  <div href="#" class="proTitle">IRA, Chatrapati Sambhajinagar </div>
+                  <div class="category">
+                    Hotel, restaurant and Banquet hall</div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+          <div class="item">
+            <div class="projCard">
+              <img class="img1 img-fluid" src="./Asset/Images/Hien Franke/1 Main Image.webp" alt="img"
+                class="img-fluid br-6">
+              <a href="./HeinFrike.html" class="overlay d-flex">
+                <div class="parentO">
+                  <div class="proTitle">
+                    Hein Frike</div>
+                  <div class="category">Office Space</div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+          <div class="item">
+            <div class="projCard">
+              <img class="img1 img-fluid" src="./Asset/Images/Banquet Hall, Orchid/1 Main Image.webp" alt="img"
+                class="img-fluid br-6">
+
+
+              <a href="./Orchid HotelBalewadi.html" class="overlay d-flex">
+                <div class="parentO">
+                  <div class="proTitle">Orchid Hotel, Balewadi,</div>
+                  <div class="category">
+                    Banquet hall</div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+  <section>
+    <div class="years">
+      <div class="container left-right-padding">
+        <div class="yearWrapper">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-6">
+              <div class="left">
+                <img src="./Asset/Images/Near-Numbers.webp" alt="img" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right">
+
+                <div class="row gy-5 align-items-center">
+                  <div class="col-6">
+                    <div class="countwrapper">
+                      <div class="counter-value">
+                        <h3><span class="counter-up counter">0</span><span class="counter-suffix">+</span>
+                        </h3>
+                        <div class="counter-title">Happy Clients</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="countwrapper">
+                      <div class="counter-value">
+                        <h3><span class="counter-up counter">2</span><span class="counter-suffix">+</span>
+                        </h3>
+                        <div class="counter-title">Lacs Sq.ft Spaces Designed </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="countwrapper">
+                      <div class="counter-value">
+                        <h3><span class="counter-up counter">0</span><span class="counter-suffix">+</span>
+                        </h3>
+                        <div class="counter-title">Years of Experience</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="countwrapper">
+                      <div class="counter-value">
+                        <h3><span class="counter-up counter">0</span><span class="counter-suffix">+</span>
+                        </h3>
+                        <div class="counter-title">Location Served</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--<div class="section-5">-->
+  <!--  <div class="container">-->
+  <!--    <div class="SecTwrapper our-latest-news">-->
+  <!--      <div class="Secctitle">Our Latest News</div>-->
+  <!--      <span class="title-separator separator-border theme-color-bg"></span>-->
+  <!--    </div>-->
+  <!--    <div class="news">-->
+  <!--      <div class="owl-carousel owl-theme sec-5-carasoul">-->
+  <!--        <div class="item">-->
+  <!--          <div class="latast-new1">-->
+  <!--            <div class="news-img">-->
+  <!--              <img class="img1 img-fluid" src="./Asset/Images/news1-img.webp" alt="">-->
+  <!--              <div class="news-date">March 1, 2019</div>-->
+  <!--            </div>-->
+  <!--            <div class="news-heading">San Francisco’s Business tower Is Our Next Large Project</div>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--        <div class="item">-->
+  <!--          <div class="latast-new1">-->
+  <!--            <div class="news-img">-->
+  <!--              <img class="img1 img-fluid" src="./Asset/Images/news1-img.webp" alt="">-->
+  <!--              <div class="news-date">March 1, 2019</div>-->
+  <!--            </div>-->
+  <!--            <div class="news-heading">San Francisco’s Business tower Is Our Next Large Project</div>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--        <div class="item">-->
+  <!--          <div class="latast-new1">-->
+  <!--            <div class="news-img">-->
+  <!--              <img class="img1 img-fluid" src="./Asset/Images/news1-img.webp" alt="">-->
+  <!--              <div class="news-date">March 1, 2019</div>-->
+  <!--            </div>-->
+  <!--            <div class="news-heading">San Francisco’s Business tower Is Our Next Large Project</div>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--        <div class="item">-->
+  <!--          <div class="latast-new1">-->
+  <!--            <div class="news-img">-->
+  <!--              <img class="img1 img-fluid" src="./Asset/Images/news1-img.webp" alt="">-->
+  <!--              <div class="news-date">March 1, 2019</div>-->
+  <!--            </div>-->
+  <!--            <div class="news-heading">San Francisco’s Business tower Is Our Next Large Project</div>-->
+  <!--          </div>-->
+  <!--        </div>-->
+
+
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--</div>-->
+
+  <footer>
+    <div class="fTop">
+      <div class="container left-right-padding">
+        <div class="fparent">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-sm-6 ">
+              <div class="c-logo">
+                <a href="./index.html">
+                  <img src="./Asset/Images/Logo-Gruhashobha-White.png" alt="">
+                </a>
+              </div>
+              <!-- <div class="c-logo">
+                <img class="img-fluid" src="./Asset/Images/Logo-Gruhashobha-White.png" alt="">
+              </div> -->
+              <div class="fHead">Contact Info</div>
+              <ul class="list-unstyled mlSpan">
+
+                <li class="addr">
+                  <div class="element">
+
+                    <div class="text">Welcome to a new dimension of interior excellence, where Gruhashobha Interiors
+                      transform your vision into reality.
+                    </div>
+                  </div>
+                </li>
+              
+
+              </ul>
+            </div>
+            <div class="col-lg-4 col-sm-6 servCenter">
+              <div class="fHead">Quick Links</div>
+              <ul class="list-unstyled hovB">
+                <li><a href="./index.html" class="title">Home</a></li>
+                <li><a href="./About.html" class="title">About Us</a></li>
+                <li><a href="./Projectgrid.html" class="title">Projects</a></li>
+                <!--<li><a href="Projectsignal.html" class="title">Project Single</a></li>-->
+                <li><a href="./Commercial.html" class="title">Commercial Design</a></li>
+                <li><a href="./Residential.html" class="title">Residential Design</a></li>
+                <li><a href="./Gallery.html" class="title">Gallery</a></li>
+                <li><a href="./Contact.html" class="title">Contact Us</a></li>
+
+              </ul>
+
+            </div>
+            <div class="col-lg-4 col-sm-8 ">
+              <div class="fHead">Contact Us</div>
+              <div class="row">
+               
+                  <ul class="list-unstyled hovB">
+                    <li>
+                      <a href="#" class="text-white d-flex align-items-baseline">
+                        <i class="fa-solid fa-phone mr-15"></i><span>+88 01632896261</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-white d-flex align-items-baseline">
+                        <i class="fa-solid fa-location-dot mr-15"></i></i><span>Aashirvad Bldg .101, Near Maruti Nanavre
+                          Bridge, Service Road Highway, Baner,Pune-45</span>
+                      </a>
+                    </li>
+                    <li><a href="#" target="_blank" class="d-flex align-items-baseline"><i
+                          class="fa-regular fa-envelope mr-15"></i><span>gruhashobhainteriors@gmail.com</span></a>
+                    </li>
+    
+
+                  </ul>
+                <!-- <div class="col-6">
+                  <ul class="list-unstyled hovB">
+                    <li><a href="#">6.00 am – 10.00 pm</a></li>
+                    <li><a href="#">8.00 am – 6.00 pm</a></li>
+                    <li><a href="#" class="brown">Closed</a></li>
+
+                  </ul> -->
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class=" text-center fbottom">
+          <div class="copyright">
+            Copyrights © 2024. Designed by Asesa Soft
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script src="./Assests/Js/carosal.js"></script>
+
+
+
+  <script src="./Asset/Home.js"></script>
+
+  <script>
+
+    AOS.init();
+
+  </script>
+</body>
+
+</html>
