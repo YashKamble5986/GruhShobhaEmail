@@ -1,3 +1,10 @@
+<?php
+// include('header.php');
+session_start();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -101,7 +108,7 @@
                             <li>
                                 <div class="dropdown  nav-dropdown">
                                     <div class="drop1">
-                                        <a href="./Contact.html"> Contact Us</a>
+                                        <a href="./Contact.php"> Contact Us</a>
                                     </div>
 
                                 </div>
@@ -181,7 +188,7 @@
                             <div class="accordion-item acord-item1">
                                 <h2 class="accordion-header">
                                     <button class="acord-btn">
-                                        <a href="./Contact.html">Contact Us</a>
+                                        <a href="./Contact.php">Contact Us</a>
                                     </button>
                                 </h2>
 
@@ -223,30 +230,67 @@
                         <span class="title-separator separator-border theme-color-bg"></span>
                     </div>
 
-                    <div class="form-section">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" placeholder="Name">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" placeholder="Email">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" placeholder="Phone">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" placeholder="Subject">
-                            </div>
-                            <div class="col-md-12">
-                                <textarea name="" id="" cols="20" rows="4" placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="btn-sec">
-                                    <button class="send-btn">Send Now</button>
+                    <!-- yash -->
+                    <?php
+                    if (isset($_SESSION['_flash']['success'])) {
+                    echo '<div style="color: green;">' . $_SESSION['_flash']['success'] . '</div>';
+                    }
+                    ?>
+                    <form action="contact-validation-controller.php" method="POST">
+
+                        <div class="form-section">
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Name" id='name' name='name'
+                                        value="<?= $_SESSION['_flash']['old']['name'] ?? '' ?>">
+                                    <p id="userNameError">
+                                        <?= $_SESSION['_flash']['errors']['name'] ?? '' ?>
+                                    </p>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Email" id='email' name='email'
+                                        value="<?= $_SESSION['_flash']['old']['email'] ?? '' ?>">
+                                    <p id="userEmailError">
+                                        <?= $_SESSION['_flash']['errors']['email'] ?? '' ?>
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Phone" id='phone' name='phone'
+                                        value="<?= $_SESSION['_flash']['old']['phone'] ?? '' ?>">
+                                    <p id="userPhoneError">
+                                        <?= $_SESSION['_flash']['errors']['phone'] ?? '' ?>
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Subject" id='subject' name='subject'
+                                        value="<?= $_SESSION['_flash']['old']['subject'] ?? '' ?>">
+                                    <p id="userSubjectError">
+                                        <?= $_SESSION['_flash']['errors']['subject'] ?? '' ?>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea name="query" id="query" cols="20" rows="4"
+                                        placeholder="Message"><?= $_SESSION['_flash']['old']['query'] ?? '' ?></textarea>
+                                    <p id="userQueryError">
+                                        <?= $_SESSION['_flash']['errors']['query'] ?? '' ?>
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="btn-sec">
+
+                                        <button type="submit" class="send-btn">Send Now</button>
+
+                                        <p id="submitButtonError">
+                                            <?= $_SESSION['_flash']['error'] ?? '' ?>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
+                    <!-- yash -->
                 </div>
                 <div class="col-lg-6">
                     <div class="maping-section">
@@ -310,91 +354,93 @@
     </div>
     <footer>
         <div class="fTop">
-          <div class="container left-right-padding">
-            <div class="fparent">
-              <div class="row gy-4">
-                <div class="col-lg-4 col-sm-6 ">
-                    <div class="c-logo">
-                        <a href="./index.html">
-                          <img src="./Asset/Images/Logo-Gruhashobha-White.png" alt="">
-                        </a>
-                      </div>
-                  <div class="fHead">Contact Info</div>
-                  <ul class="list-unstyled mlSpan">
-    
-                    <li class="addr">
-                      <div class="element">
-    
-                        <div class="text">Welcome to a new dimension of interior excellence, where Gruhashobha Interiors
-                          transform your vision into reality.
+            <div class="container left-right-padding">
+                <div class="fparent">
+                    <div class="row gy-4">
+                        <div class="col-lg-4 col-sm-6 ">
+                            <div class="c-logo">
+                                <a href="./index.html">
+                                    <img src="./Asset/Images/Logo-Gruhashobha-White.png" alt="">
+                                </a>
+                            </div>
+                            <div class="fHead">Contact Info</div>
+                            <ul class="list-unstyled mlSpan">
+
+                                <li class="addr">
+                                    <div class="element">
+
+                                        <div class="text">Welcome to a new dimension of interior excellence, where
+                                            Gruhashobha Interiors
+                                            transform your vision into reality.
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                            </ul>
                         </div>
-                      </div>
-                    </li>
-                  
-    
-                  </ul>
-                </div>
-                <div class="col-lg-4 col-sm-6 servCenter">
-                  <div class="fHead">Quick Links</div>
-                  <ul class="list-unstyled hovB">
-                    <li><a href="./index.html" class="title">Home</a></li>
-                    <li><a href="./About.html" class="title">About Us</a></li>
-                    <li><a href="./Projectgrid.html" class="title">Projects</a></li>
-                    <!--<li><a href="Projectsignal.html" class="title">Project Single</a></li>-->
-                    <li><a href="./Commercial.html" class="title">Commercial Design</a></li>
-                    <li><a href="./Residential.html" class="title">Residential Design</a></li>
-                    <li><a href="./Gallery.html" class="title">Gallery</a></li>
-                    <li><a href="./Contact.html" class="title">Contact Us</a></li>
-    
-                  </ul>
-    
-                </div>
-                <div class="col-lg-4 col-sm-8 ">
-                  <div class="fHead">Contact Us</div>
-                  <div class="row">
-                   
-                      <ul class="list-unstyled hovB">
-                        <li>
-                          <a href="#" class="text-white d-flex align-items-baseline">
-                            <i class="fa-solid fa-phone mr-15"></i><span>+88 01632896261</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" class="text-white d-flex align-items-baseline">
-                            <i class="fa-solid fa-location-dot mr-15"></i></i><span>Aashirvad Bldg .101, Near Maruti Nanavre
-                              Bridge, Service Road Highway, Baner,Pune-45</span>
-                          </a>
-                        </li>
-                        <li><a href="#" target="_blank" class="d-flex align-items-baseline"><i
-                              class="fa-regular fa-envelope mr-15"></i><span>gruhashobhainteriors@gmail.com</span></a>
-                        </li>
-        
-    
-                      </ul>
-                    <!-- <div class="col-6">
+                        <div class="col-lg-4 col-sm-6 servCenter">
+                            <div class="fHead">Quick Links</div>
+                            <ul class="list-unstyled hovB">
+                                <li><a href="./index.html" class="title">Home</a></li>
+                                <li><a href="./About.html" class="title">About Us</a></li>
+                                <li><a href="./Projectgrid.html" class="title">Projects</a></li>
+                                <!--<li><a href="Projectsignal.html" class="title">Project Single</a></li>-->
+                                <li><a href="./Commercial.html" class="title">Commercial Design</a></li>
+                                <li><a href="./Residential.html" class="title">Residential Design</a></li>
+                                <li><a href="./Gallery.html" class="title">Gallery</a></li>
+                                <li><a href="./Contact.php" class="title">Contact Us</a></li>
+
+                            </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-sm-8 ">
+                            <div class="fHead">Contact Us</div>
+                            <div class="row">
+
+                                <ul class="list-unstyled hovB">
+                                    <li>
+                                        <a href="#" class="text-white d-flex align-items-baseline">
+                                            <i class="fa-solid fa-phone mr-15"></i><span>+88 01632896261</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white d-flex align-items-baseline">
+                                            <i class="fa-solid fa-location-dot mr-15"></i></i><span>Aashirvad Bldg .101,
+                                                Near Maruti Nanavre
+                                                Bridge, Service Road Highway, Baner,Pune-45</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#" target="_blank" class="d-flex align-items-baseline"><i
+                                                class="fa-regular fa-envelope mr-15"></i><span>gruhashobhainteriors@gmail.com</span></a>
+                                    </li>
+
+
+                                </ul>
+                                <!-- <div class="col-6">
                       <ul class="list-unstyled hovB">
                         <li><a href="#">6.00 am – 10.00 pm</a></li>
                         <li><a href="#">8.00 am – 6.00 pm</a></li>
                         <li><a href="#" class="brown">Closed</a></li>
     
                       </ul> -->
+                            </div>
+                        </div>
+
                     </div>
-                  </div>
-    
+
                 </div>
-    
-              </div>
             </div>
-    
+
             <div class=" text-center fbottom">
-              <div class="copyright">
-                Copyrights © 2024. Designed by Asesa Soft
-              </div>
-    
+                <div class="copyright">
+                    Copyrights © 2024. Designed by Asesa Soft
+                </div>
+
             </div>
-          </div>
         </div>
-      </footer>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
@@ -412,10 +458,32 @@
 
     <script src="./Assests/Js/carosal.js"></script>
 
-
-
     <script src="./Asset/Home.js"></script>
 
 </body>
 
 </html>
+
+
+<?php
+if ($_SESSION['_flash']['errors'] ?? false) {
+
+    if (count($_SESSION['_flash']['errors'])) {
+        echo '<script>';
+        echo 'document.getElementById("email").focus();';
+        echo 'var errors = ' . json_encode($_SESSION['_flash']['errors']) . ';';
+        echo 'var errorMessage = Object.values(errors).join("\n");';
+        // echo 'alert(errorMessage);';
+        echo '</script>';
+    }
+
+}
+
+
+
+
+// unset previous _flash
+if (isset($_SESSION['_flash'])) {
+    unset($_SESSION['_flash']);
+}
+?>
